@@ -1,13 +1,13 @@
 import warnings
 
-import numpy as np
 import pandas as pd
 from sklearn.exceptions import DataConversionWarning
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
 
 warnings.filterwarnings(action='ignore', category=DataConversionWarning)
+
 
 class LogisticRegressionClass(object):
 
@@ -15,12 +15,15 @@ class LogisticRegressionClass(object):
         pass
 
     def main(self):
-        col_names = ['Sample_code_number', 'Clump_Thickness', 'Uniformity_of_Cell_Size', 'Uniformity_of_Cell_Shape',
+        # Loading data
+        colnames = ['Sample_code_number', 'Clump_Thickness', 'Uniformity_of_Cell_Size', 'Uniformity_of_Cell_Shape',
                     'Marginal_Adhesion', 'Single_Epithelial_Cell_Size', 'Bare_Nuclei', 'Bland_Chromatin',
                     'Normal_Nucleoli', 'Mitoses', 'Class']
-        data = pd.read_csv('breast-cancer-wisconsin.data',names=col_names)
+        data = pd.read_csv("breast-cancer-wisconsin.data", names=colnames)
+        data.head()
 
-        data = data.replace({'Class': {2: 0, 4: 1}})
+        # Data pre processing
+        data = data.replace({'Class': {2: "Benign", 4: "Malignant"}})
 
         # Replacing the missing values with 1
         data = data.replace({'?': 1})
@@ -46,18 +49,16 @@ class LogisticRegressionClass(object):
         print("Train data set size\t: {} ({}%)".format(train_size, round(train_size * 100 / total_samples, 2)))
         print("Test data set size\t: {} ({}%)".format(test_size, round(test_size * 100 / total_samples, 2)))
 
-        log_reg = LogisticRegression(random_state=0)
-        log_reg.fit(X_train, y_train)
-        y_pred = log_reg.predict(X_test)
-        print('Accuracy of logistic regression classifier on test set: {:.2f}'.format(
-            log_reg.score(X_test, np.ravel(y_test, order='C'))))
+        SVC(C=1.0, break_ties=False, cache_size=200, class_weight=None, coef0=0.0, decision_function_shape='ovr',
+            degree=3, gamma='scale', kernel='linear', max_iter=-1, probability=False, random_state=None, shrinking=True,
+            tol=0.001, verbose=False)
+        svclassifier = SVC(kernel='poly', degree=4)
+        svclassifier.fit(X_train, y_train)
 
-        confusion_matrix_out = confusion_matrix(y_test, np.ravel(y_pred, order='C'))
-        print("Confusion Matrix: \n {}".format(confusion_matrix_out))
-        print("Accuracy: {}".format(round((confusion_matrix_out[0][0] + confusion_matrix_out[1][1]) * 100.0 / (
-                sum(confusion_matrix_out[0]) + sum(confusion_matrix_out[1])), 2)))
-        print(
-            "Malignant recall: {}".format(round(confusion_matrix_out[1][1] * 100.0 / sum(confusion_matrix_out[1]), 2)))
+        y_pred = svclassifier.predict(X_test)
+        print(confusion_matrix(y_test, y_pred))
+
+        print(classification_report(y_test,y_pred))
 
 
 if __name__ == "__main__":
