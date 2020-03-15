@@ -1,0 +1,584 @@
+[
+   {
+      "current_level": 1,
+      "leaf_id": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "parents": "root",
+      "rule": "if obj[1]<=2:"
+   },
+   {
+      "current_level": 2,
+      "leaf_id": "a833e910-66cf-11ea-96cf-5c5f6740a988",
+      "parents": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "rule": "if obj[5] == '1':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a834100c-66cf-11ea-b615-5c5f6740a988",
+      "parents": "a833e910-66cf-11ea-96cf-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a834ac52-66cf-11ea-8d42-5c5f6740a988",
+      "parents": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "rule": "elif obj[5] == '2':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a834d362-66cf-11ea-806c-5c5f6740a988",
+      "parents": "a834ac52-66cf-11ea-8d42-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a8363314-66cf-11ea-af4f-5c5f6740a988",
+      "parents": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "rule": "elif obj[5] == '5':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a8394050-66cf-11ea-8272-5c5f6740a988",
+      "parents": "a8363314-66cf-11ea-af4f-5c5f6740a988",
+      "rule": "if obj[2]<=2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a83d1236-66cf-11ea-8c23-5c5f6740a988",
+      "parents": "a8394050-66cf-11ea-8272-5c5f6740a988",
+      "rule": "if obj[3]<=1:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a83d4cc0-66cf-11ea-9ba6-5c5f6740a988",
+      "parents": "a83d1236-66cf-11ea-8c23-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 4,
+      "leaf_id": "a83e0ec0-66cf-11ea-997d-5c5f6740a988",
+      "parents": "a8394050-66cf-11ea-8272-5c5f6740a988",
+      "rule": "elif obj[3]>1:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a83e495a-66cf-11ea-816e-5c5f6740a988",
+      "parents": "a83e0ec0-66cf-11ea-997d-5c5f6740a988",
+      "rule": "return 0.5"
+   }, 
+   {
+      "current_level": 3,
+      "leaf_id": "a83ee59a-66cf-11ea-976a-5c5f6740a988",
+      "parents": "a8363314-66cf-11ea-af4f-5c5f6740a988",
+      "rule": "elif obj[2]>2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a83f0e00-66cf-11ea-b97e-5c5f6740a988",
+      "parents": "a83ee59a-66cf-11ea-976a-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a83faa46-66cf-11ea-880f-5c5f6740a988",
+      "parents": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "rule": "elif obj[5] == '?':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a83ff734-66cf-11ea-a556-5c5f6740a988",
+      "parents": "a83faa46-66cf-11ea-880f-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a84094ae-66cf-11ea-88f9-5c5f6740a988",
+      "parents": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "rule": "elif obj[5] == '3':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a840bbf0-66cf-11ea-b2a6-5c5f6740a988",
+      "parents": "a84094ae-66cf-11ea-88f9-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a8416bc6-66cf-11ea-87a7-5c5f6740a988",
+      "parents": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "rule": "elif obj[5] == '4':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a841928a-66cf-11ea-95cc-5c5f6740a988",
+      "parents": "a8416bc6-66cf-11ea-87a7-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a8422d90-66cf-11ea-8ff2-5c5f6740a988",
+      "parents": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "rule": "elif obj[5] == '10':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a8426834-66cf-11ea-a6b6-5c5f6740a988",
+      "parents": "a8422d90-66cf-11ea-8ff2-5c5f6740a988",
+      "rule": "return 0.75"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a843046e-66cf-11ea-88e4-5c5f6740a988",
+      "parents": "a82f1bf4-66cf-11ea-9724-5c5f6740a988",
+      "rule": "elif obj[5] == '7':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a8433efe-66cf-11ea-aa63-5c5f6740a988",
+      "parents": "a843046e-66cf-11ea-88e4-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 1,
+      "leaf_id": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "parents": "root",
+      "rule": "elif obj[1]>2:"
+   },
+   {
+      "current_level": 2,
+      "leaf_id": "a84bcbd2-66cf-11ea-8b72-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "if obj[5] == '10':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a84f73fe-66cf-11ea-b3f0-5c5f6740a988",
+      "parents": "a84bcbd2-66cf-11ea-8b72-5c5f6740a988",
+      "rule": "if obj[6]>3:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a84f9adc-66cf-11ea-9008-5c5f6740a988",
+      "parents": "a84f73fe-66cf-11ea-b3f0-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 3,
+      "leaf_id": "a850118c-66cf-11ea-9746-5c5f6740a988",
+      "parents": "a84bcbd2-66cf-11ea-8b72-5c5f6740a988",
+      "rule": "elif obj[6]<=3:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a852f7b6-66cf-11ea-a971-5c5f6740a988",
+      "parents": "a850118c-66cf-11ea-9746-5c5f6740a988",
+      "rule": "if obj[0]<=6:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a85541f0-66cf-11ea-acbf-5c5f6740a988",
+      "parents": "a852f7b6-66cf-11ea-a971-5c5f6740a988",
+      "rule": "if obj[7]>2:"
+   },
+   {
+      "current_level": 6,
+      "leaf_id": "a8557ae4-66cf-11ea-9081-5c5f6740a988",
+      "parents": "a85541f0-66cf-11ea-acbf-5c5f6740a988",
+      "rule": "return 0.6666666666666666"
+   }, 
+   {
+      "current_level": 5,
+      "leaf_id": "a855f15c-66cf-11ea-affb-5c5f6740a988",
+      "parents": "a852f7b6-66cf-11ea-a971-5c5f6740a988",
+      "rule": "elif obj[7]<=2:"
+   },
+   {
+      "current_level": 6,
+      "leaf_id": "a856171e-66cf-11ea-b6c9-5c5f6740a988",
+      "parents": "a855f15c-66cf-11ea-affb-5c5f6740a988",
+      "rule": "return 0.5"
+   }, 
+   {
+      "current_level": 4,
+      "leaf_id": "a856b4ae-66cf-11ea-8b11-5c5f6740a988",
+      "parents": "a850118c-66cf-11ea-9746-5c5f6740a988",
+      "rule": "elif obj[0]>6:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a856dbdc-66cf-11ea-941e-5c5f6740a988",
+      "parents": "a856b4ae-66cf-11ea-8b11-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a857514c-66cf-11ea-b5e0-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '1':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a85abe9a-66cf-11ea-a9fb-5c5f6740a988",
+      "parents": "a857514c-66cf-11ea-b5e0-5c5f6740a988",
+      "rule": "if obj[2]>2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a85db82c-66cf-11ea-bd87-5c5f6740a988",
+      "parents": "a85abe9a-66cf-11ea-a9fb-5c5f6740a988",
+      "rule": "if obj[8]<=1:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a86078a8-66cf-11ea-a1d9-5c5f6740a988",
+      "parents": "a85db82c-66cf-11ea-bd87-5c5f6740a988",
+      "rule": "if obj[4]>2:"
+   },
+   {
+      "current_level": 6,
+      "leaf_id": "a8639812-66cf-11ea-8bdb-5c5f6740a988",
+      "parents": "a86078a8-66cf-11ea-a1d9-5c5f6740a988",
+      "rule": "if obj[3]>1:"
+   },
+   {
+      "current_level": 7,
+      "leaf_id": "a865baf8-66cf-11ea-a78e-5c5f6740a988",
+      "parents": "a8639812-66cf-11ea-8bdb-5c5f6740a988",
+      "rule": "if obj[6]>3:"
+   },
+   {
+      "current_level": 8,
+      "leaf_id": "a8672e08-66cf-11ea-972f-5c5f6740a988",
+      "parents": "a865baf8-66cf-11ea-a78e-5c5f6740a988",
+      "rule": "if obj[0]>6:"
+   },
+   {
+      "current_level": 9,
+      "leaf_id": "a867562e-66cf-11ea-ae4a-5c5f6740a988",
+      "parents": "a8672e08-66cf-11ea-972f-5c5f6740a988",
+      "rule": "return 0.75"
+   }, 
+   {
+      "current_level": 8,
+      "leaf_id": "a867f168-66cf-11ea-95d2-5c5f6740a988",
+      "parents": "a865baf8-66cf-11ea-a78e-5c5f6740a988",
+      "rule": "elif obj[0]<=6:"
+   },
+   {
+      "current_level": 9,
+      "leaf_id": "a868186c-66cf-11ea-ad46-5c5f6740a988",
+      "parents": "a867f168-66cf-11ea-95d2-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 7,
+      "leaf_id": "a868a124-66cf-11ea-ab3e-5c5f6740a988",
+      "parents": "a8639812-66cf-11ea-8bdb-5c5f6740a988",
+      "rule": "elif obj[6]<=3:"
+   },
+   {
+      "current_level": 8,
+      "leaf_id": "a868c838-66cf-11ea-a8ab-5c5f6740a988",
+      "parents": "a868a124-66cf-11ea-ab3e-5c5f6740a988",
+      "rule": "return 0.6666666666666666"
+   }, 
+   {
+      "current_level": 6,
+      "leaf_id": "a86950ec-66cf-11ea-a630-5c5f6740a988",
+      "parents": "a86078a8-66cf-11ea-a1d9-5c5f6740a988",
+      "rule": "elif obj[3]<=1:"
+   },
+   {
+      "current_level": 7,
+      "leaf_id": "a86977fa-66cf-11ea-af31-5c5f6740a988",
+      "parents": "a86950ec-66cf-11ea-a630-5c5f6740a988",
+      "rule": "return 0.3333333333333333"
+   }, 
+   {
+      "current_level": 5,
+      "leaf_id": "a86a1440-66cf-11ea-96ae-5c5f6740a988",
+      "parents": "a85db82c-66cf-11ea-bd87-5c5f6740a988",
+      "rule": "elif obj[4]<=2:"
+   },
+   {
+      "current_level": 6,
+      "leaf_id": "a86a27c0-66cf-11ea-ba42-5c5f6740a988",
+      "parents": "a86a1440-66cf-11ea-96ae-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 4,
+      "leaf_id": "a86ac400-66cf-11ea-876f-5c5f6740a988",
+      "parents": "a85abe9a-66cf-11ea-a9fb-5c5f6740a988",
+      "rule": "elif obj[8]>1:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a86aeb1c-66cf-11ea-a719-5c5f6740a988",
+      "parents": "a86ac400-66cf-11ea-876f-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 3,
+      "leaf_id": "a86b73cc-66cf-11ea-97bc-5c5f6740a988",
+      "parents": "a857514c-66cf-11ea-b5e0-5c5f6740a988",
+      "rule": "elif obj[2]<=2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a86b9ade-66cf-11ea-93e1-5c5f6740a988",
+      "parents": "a86b73cc-66cf-11ea-97bc-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a86c1012-66cf-11ea-a53e-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '5':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a86fcd22-66cf-11ea-8c4e-5c5f6740a988",
+      "parents": "a86c1012-66cf-11ea-a53e-5c5f6740a988",
+      "rule": "if obj[0]>6:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a86ff44c-66cf-11ea-bac8-5c5f6740a988",
+      "parents": "a86fcd22-66cf-11ea-8c4e-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 3,
+      "leaf_id": "a870cb28-66cf-11ea-87be-5c5f6740a988",
+      "parents": "a86c1012-66cf-11ea-a53e-5c5f6740a988",
+      "rule": "elif obj[0]<=6:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a8738a46-66cf-11ea-b87e-5c5f6740a988",
+      "parents": "a870cb28-66cf-11ea-87be-5c5f6740a988",
+      "rule": "if obj[2]>2:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a875ad00-66cf-11ea-8755-5c5f6740a988",
+      "parents": "a8738a46-66cf-11ea-b87e-5c5f6740a988",
+      "rule": "if obj[3]>1:"
+   },
+   {
+      "current_level": 6,
+      "leaf_id": "a87781c6-66cf-11ea-88f6-5c5f6740a988",
+      "parents": "a875ad00-66cf-11ea-8755-5c5f6740a988",
+      "rule": "if obj[4]>2:"
+   },
+   {
+      "current_level": 7,
+      "leaf_id": "a8791bec-66cf-11ea-8c62-5c5f6740a988",
+      "parents": "a87781c6-66cf-11ea-88f6-5c5f6740a988",
+      "rule": "if obj[6]>3:"
+   },
+   {
+      "current_level": 8,
+      "leaf_id": "a87a7b78-66cf-11ea-a189-5c5f6740a988",
+      "parents": "a8791bec-66cf-11ea-8c62-5c5f6740a988",
+      "rule": "if obj[7]>2:"
+   },
+   {
+      "current_level": 9,
+      "leaf_id": "a87ba070-66cf-11ea-8e37-5c5f6740a988",
+      "parents": "a87a7b78-66cf-11ea-a189-5c5f6740a988",
+      "rule": "if obj[8]<=1:"
+   },
+   {
+      "current_level": 10,
+      "leaf_id": "a87bc792-66cf-11ea-91f3-5c5f6740a988",
+      "parents": "a87ba070-66cf-11ea-8e37-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a87c503e-66cf-11ea-9dc8-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '8':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a87fe634-66cf-11ea-8a43-5c5f6740a988",
+      "parents": "a87c503e-66cf-11ea-9dc8-5c5f6740a988",
+      "rule": "if obj[7]>2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a8800d46-66cf-11ea-b23f-5c5f6740a988",
+      "parents": "a87fe634-66cf-11ea-8a43-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 3,
+      "leaf_id": "a880a980-66cf-11ea-995c-5c5f6740a988",
+      "parents": "a87c503e-66cf-11ea-9dc8-5c5f6740a988",
+      "rule": "elif obj[7]<=2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a880d08c-66cf-11ea-8949-5c5f6740a988",
+      "parents": "a880a980-66cf-11ea-995c-5c5f6740a988",
+      "rule": "return 0.75"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a8818058-66cf-11ea-a2fe-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '3':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a8853d5e-66cf-11ea-9730-5c5f6740a988",
+      "parents": "a8818058-66cf-11ea-a2fe-5c5f6740a988",
+      "rule": "if obj[2]>2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a88577f8-66cf-11ea-a214-5c5f6740a988",
+      "parents": "a8853d5e-66cf-11ea-9730-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 3,
+      "leaf_id": "a8861438-66cf-11ea-9dd6-5c5f6740a988",
+      "parents": "a8818058-66cf-11ea-a2fe-5c5f6740a988",
+      "rule": "elif obj[2]<=2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a8863b4a-66cf-11ea-94f7-5c5f6740a988",
+      "parents": "a8861438-66cf-11ea-9dd6-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a886c400-66cf-11ea-bcab-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '2':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a88a32ec-66cf-11ea-b787-5c5f6740a988",
+      "parents": "a886c400-66cf-11ea-bcab-5c5f6740a988",
+      "rule": "if obj[4]>2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a88df010-66cf-11ea-9dd5-5c5f6740a988",
+      "parents": "a88a32ec-66cf-11ea-b787-5c5f6740a988",
+      "rule": "if obj[7]>2:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a88e2aae-66cf-11ea-9ba3-5c5f6740a988",
+      "parents": "a88df010-66cf-11ea-9dd5-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 4,
+      "leaf_id": "a88ec6da-66cf-11ea-862f-5c5f6740a988",
+      "parents": "a88a32ec-66cf-11ea-b787-5c5f6740a988",
+      "rule": "elif obj[7]<=2:"
+   },
+   {
+      "current_level": 5,
+      "leaf_id": "a88f01c0-66cf-11ea-bd4b-5c5f6740a988",
+      "parents": "a88ec6da-66cf-11ea-862f-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 3,
+      "leaf_id": "a88febca-66cf-11ea-8849-5c5f6740a988",
+      "parents": "a886c400-66cf-11ea-bcab-5c5f6740a988",
+      "rule": "elif obj[4]<=2:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a89012dc-66cf-11ea-8bad-5c5f6740a988",
+      "parents": "a88febca-66cf-11ea-8849-5c5f6740a988",
+      "rule": "return 0"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a890e9b0-66cf-11ea-9e55-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '7':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a8940a74-66cf-11ea-a7b8-5c5f6740a988",
+      "parents": "a890e9b0-66cf-11ea-9e55-5c5f6740a988",
+      "rule": "if obj[8]<=1:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a8943180-66cf-11ea-bc3f-5c5f6740a988",
+      "parents": "a8940a74-66cf-11ea-a7b8-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 3,
+      "leaf_id": "a894ba38-66cf-11ea-86d7-5c5f6740a988",
+      "parents": "a890e9b0-66cf-11ea-9e55-5c5f6740a988",
+      "rule": "elif obj[8]>1:"
+   },
+   {
+      "current_level": 4,
+      "leaf_id": "a894e14c-66cf-11ea-b09e-5c5f6740a988",
+      "parents": "a894ba38-66cf-11ea-86d7-5c5f6740a988",
+      "rule": "return 0.6666666666666666"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a8957d8c-66cf-11ea-ace2-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '4':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a895a49a-66cf-11ea-b9d0-5c5f6740a988",
+      "parents": "a8957d8c-66cf-11ea-ace2-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a8965462-66cf-11ea-8071-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '9':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a8967b74-66cf-11ea-bd22-5c5f6740a988",
+      "parents": "a8965462-66cf-11ea-8071-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a896f09e-66cf-11ea-8f58-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '?':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a89717b4-66cf-11ea-922f-5c5f6740a988",
+      "parents": "a896f09e-66cf-11ea-8f58-5c5f6740a988",
+      "rule": "return 0.3333333333333333"
+   }, 
+   {
+      "current_level": 2,
+      "leaf_id": "a897b3ee-66cf-11ea-b281-5c5f6740a988",
+      "parents": "a843c7ba-66cf-11ea-9783-5c5f6740a988",
+      "rule": "elif obj[5] == '6':"
+   },
+   {
+      "current_level": 3,
+      "leaf_id": "a897db00-66cf-11ea-a319-5c5f6740a988",
+      "parents": "a897b3ee-66cf-11ea-b281-5c5f6740a988",
+      "rule": "return 1"
+   }, 
+{}]
