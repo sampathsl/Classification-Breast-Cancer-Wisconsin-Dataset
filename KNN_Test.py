@@ -19,6 +19,7 @@ data = data[data.Bare_Nuclei != "?"]
 
 total_samples = data['Sample_code_number'].count()
 print("Number of columns\t: {}".format(total_samples))
+
 cat_vars = ['Clump_Thickness', 'Uniformity_of_Cell_Size', 'Uniformity_of_Cell_Shape',
             'Marginal_Adhesion', 'Single_Epithelial_Cell_Size', 'Bare_Nuclei', 'Bland_Chromatin',
             'Normal_Nucleoli', 'Mitoses', 'Class']
@@ -28,7 +29,13 @@ X = data_final.loc[:, data_final.columns != 'Class']
 y = data_final.loc[:, data_final.columns == 'Class']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.349, random_state=1)
-print(X_test)
+
+# Add scalar for further improvement
+from sklearn.preprocessing import StandardScaler
+scalar = StandardScaler()
+scalar.fit(X_train)
+X_train = scalar.transform(X_train)
+X_test = scalar.transform(X_test)
 
 n = 5
 knn = KNeighborsClassifier(n_neighbors=n)  # Fit the classifier to the data
