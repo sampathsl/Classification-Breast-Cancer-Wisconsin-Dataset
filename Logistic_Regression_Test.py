@@ -1,10 +1,12 @@
+import warnings
+
 import numpy as np
 import pandas as pd
+from sklearn.exceptions import DataConversionWarning
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
-from sklearn.exceptions import DataConversionWarning
-import warnings
+
 warnings.filterwarnings(action='ignore', category=DataConversionWarning)
 
 
@@ -14,18 +16,15 @@ class LogisticRegressionClass(object):
         pass
 
     def main(self):
-        colnames = ['Sample_code_number', 'Clump_Thickness', 'Uniformity_of_Cell_Size', 'Uniformity_of_Cell_Shape',
+        colNames = ['Sample_code_number', 'Clump_Thickness', 'Uniformity_of_Cell_Size', 'Uniformity_of_Cell_Shape',
                     'Marginal_Adhesion', 'Single_Epithelial_Cell_Size', 'Bare_Nuclei', 'Bland_Chromatin',
                     'Normal_Nucleoli', 'Mitoses', 'Class']
-        data = pd.read_csv('breast-cancer-wisconsin.data',names=colnames)
+        data = pd.read_csv('breast-cancer-wisconsin.data', names=colNames)
 
         data = data.replace({'Class': {2: 0, 4: 1}})
 
         # Replacing the missing values with 1
         data = data.replace({'?': 1})
-
-        # Remove data wich has missing values
-        # data = data[data.Bare_Nuclei != "?"]
 
         total_samples = data['Sample_code_number'].count()
         print("Number of columns\t: {}".format(total_samples))
@@ -42,8 +41,8 @@ class LogisticRegressionClass(object):
 
         train_size = X_train.shape[0]
         test_size = X_test.shape[0]
-        print("Train data set size\t: {} ({}%)".format(train_size, round(train_size*100/total_samples, 2)))
-        print("Test data set size\t: {} ({}%)".format(test_size, round(test_size*100/total_samples, 2)))
+        print("Train data set size\t: {} ({}%)".format(train_size, round(train_size * 100 / total_samples, 2)))
+        print("Test data set size\t: {} ({}%)".format(test_size, round(test_size * 100 / total_samples, 2)))
 
         logreg = LogisticRegression(random_state=0)
         logreg.fit(X_train, y_train)
@@ -55,7 +54,8 @@ class LogisticRegressionClass(object):
         print("Confusion Matrix: \n {}".format(confusion_matrix_out))
         print("Accuracy: {}".format(round((confusion_matrix_out[0][0] + confusion_matrix_out[1][1]) * 100.0 / (
                 sum(confusion_matrix_out[0]) + sum(confusion_matrix_out[1])), 2)))
-        print("Malignant recall: {}".format(round(confusion_matrix_out[1][1]*100.0/sum(confusion_matrix_out[1]),2)))
+        print(
+            "Malignant recall: {}".format(round(confusion_matrix_out[1][1] * 100.0 / sum(confusion_matrix_out[1]), 2)))
 
 
 if __name__ == "__main__":

@@ -5,16 +5,15 @@ from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 
 # Loading data
-colnames = ['Sample_code_number', 'Clump_Thickness', 'Uniformity_of_Cell_Size', 'Uniformity_of_Cell_Shape',
+colNames = ['Sample_code_number', 'Clump_Thickness', 'Uniformity_of_Cell_Size', 'Uniformity_of_Cell_Shape',
             'Marginal_Adhesion', 'Single_Epithelial_Cell_Size', 'Bare_Nuclei', 'Bland_Chromatin',
             'Normal_Nucleoli', 'Mitoses', 'Class']
-data = pd.read_csv("breast-cancer-wisconsin.data", names=colnames)
+data = pd.read_csv("breast-cancer-wisconsin.data", names=colNames)
 data.head()
 
 # Data pre processing
 data = data.replace({'Class': {2: "Benign", 4: "Malignant"}})
-# Replacing the missing values with 1
-# data = data.replace({'?': 1})
+
 # Remove data wich has missing values
 data = data[data.Bare_Nuclei != "?"]
 
@@ -46,31 +45,6 @@ print("Accuracy: {}".format(round((confusion_matrix_out[0][0] + confusion_matrix
         sum(confusion_matrix_out[0]) + sum(confusion_matrix_out[1])), 2)))
 print("Malignant recall: {}".format(round(confusion_matrix_out[1][1] * 100.0 / sum(confusion_matrix_out[1]), 2)))
 
-
-dtree = tree.plot_tree(clf)
-
-# import matplotlib.pyplot as plt
-# import matplotlib.image as mpimg
-# import pydotplus
-# import io
-#
-# from sklearn.tree import export_graphviz
-#
-# dot_data = io.StringIO()
-#
-# export_graphviz(clf, out_file=dot_data, feature_names=cat_vars[:-1], class_names=["Benign", "Malignant"], rounded=True,
-#                 filled=True)
-#
-# filename = "tree.png"
-# pydotplus.graph_from_dot_data(dot_data.getvalue()).write_png(filename)
-#
-# plt.figure(figsize=(12, 12))
-# img = mpimg.imread(filename)
-# imgplot = plt.imshow(img)
-#
-# plt.show()
-
-
 from chefboost import Chefboost as chef
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -86,12 +60,6 @@ data.head()
 # Data pre processing
 
 data = data.replace({'Decision': {2: 0, 4: 1}})
-
-# This time no need to replace the missing values
-# Replacing the missing values with 1
-# data = data.replace({'?': 1})
-# Remove data wich has missing values
-# data = data[data.Bare_Nuclei != "?"]
 
 total_samples = data['Sample_code_number'].count()
 print("Number of columns\t: {}".format(total_samples))
